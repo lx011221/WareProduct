@@ -15,6 +15,7 @@ public class SupplierDaoImpl implements SupplierDao {
     static PreparedStatement preparedStatement = null;
     static ResultSet resultSet = null;
     private static final String SQL_CREATE = "insert into supplier (sname, address, people, phone, mail) values (?, ?, ?, ?, ?)";
+    private static final String SQL_SELECTBYSID = "select * from supplier where sid = ?";
 
     @Override
     public int create(Supplier supplier) {
@@ -37,7 +38,26 @@ public class SupplierDaoImpl implements SupplierDao {
 
     @Override
     public Supplier selectBySid(int sid) {
-        return null;
+        Supplier supplier = new Supplier();
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(SQL_SELECTBYSID);
+            preparedStatement.setInt(1, sid);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                supplier.setSid(sid);
+                supplier.setSname(resultSet.getString("sname"));
+                supplier.setAddress(resultSet.getString("address"));
+                supplier.setPeople(resultSet.getString("people"));
+                supplier.setPhone(resultSet.getString("phone"));
+                supplier.setMail(resultSet.getString("mail"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBConnection.close(resultSet, preparedStatement, connection);
+        }
+        return supplier;
     }
 
     @Override
