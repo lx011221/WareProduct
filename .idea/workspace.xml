@@ -4,8 +4,7 @@
     <list default="true" id="92625af3-4939-46a9-8dc8-23d4c65fdbbe" name="变更" comment="变更">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dao/Impl/SupplierDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/Impl/SupplierDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/SupplierDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/SupplierDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/SupplierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/SupplierService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +35,28 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "14",
+    "last_opened_file_path": "D:/Program Files/IntelliJ IDEA 2022.1.4/project/WareProduct/lib",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="test3.17" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -47,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679020150592</updated>
-      <workItem from="1679291107579" duration="636000" />
+      <workItem from="1679291107579" duration="1284000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1679283992185</created>
@@ -91,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679285050092</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="变更">
+      <created>1679291760722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679291760722</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
