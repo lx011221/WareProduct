@@ -4,6 +4,8 @@ import Dao.Impl.SupplierDaoImpl;
 import Dao.SupplierDao;
 import Entity.Supplier;
 
+import java.util.ArrayList;
+
 public class SupplierService {
     static SupplierDao supplierDao = new SupplierDaoImpl();
 
@@ -15,11 +17,11 @@ public class SupplierService {
         return supplierDao.selectBySid(sid);
     }
 
-    public Supplier selectBySname(String value) {
+    public ArrayList<Supplier> selectBySname(String value) {
         return supplierDao.selectBySname(value);
     }
 
-    public Supplier selectByPeople(String value) {
+    public ArrayList<Supplier> selectByPeople(String value) {
         return supplierDao.selectByPeople(value);
     }
 }
