@@ -16,6 +16,8 @@ public class SupplierDaoImpl implements SupplierDao {
     static ResultSet resultSet = null;
     private static final String SQL_CREATE = "insert into supplier (sname, address, people, phone, mail) values (?, ?, ?, ?, ?)";
     private static final String SQL_SELECTBYSID = "select * from supplier where sid = ?";
+    private static final String SQL_SELECTBYSNAME = "select * from supplier where sname like ?";
+    private static final String SQL_SELECTBYPEOPLE = "select * from supplier where people like ?";
 
     @Override
     public int create(Supplier supplier) {
@@ -62,11 +64,51 @@ public class SupplierDaoImpl implements SupplierDao {
 
     @Override
     public ArrayList<Supplier> selectBySname(String value) {
-        return null;
+        ArrayList<Supplier> suppliers = new ArrayList<>();
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(SQL_SELECTBYSNAME);
+            preparedStatement.setString(1, "%" + value + "%");
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int sid = resultSet.getInt("sid");
+                String sname = resultSet.getString("sname");
+                String address = resultSet.getString("address");
+                String people = resultSet.getString("people");
+                String phone = resultSet.getString("phone");
+                String mail = resultSet.getString("mail");
+                suppliers.add(new Supplier(sid, sname, address, people, phone, mail));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBConnection.close(resultSet, preparedStatement, connection);
+        }
+        return suppliers;
     }
 
     @Override
     public ArrayList<Supplier> selectByPeople(String value) {
-        return null;
+        ArrayList<Supplier> suppliers = new ArrayList<>();
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(SQL_SELECTBYPEOPLE);
+            preparedStatement.setString(1, "%" + value + "%");
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int sid = resultSet.getInt("sid");
+                String sname = resultSet.getString("sname");
+                String address = resultSet.getString("address");
+                String people = resultSet.getString("people");
+                String phone = resultSet.getString("phone");
+                String mail = resultSet.getString("mail");
+                suppliers.add(new Supplier(sid, sname, address, people, phone, mail));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBConnection.close(resultSet, preparedStatement, connection);
+        }
+        return suppliers;
     }
 }
