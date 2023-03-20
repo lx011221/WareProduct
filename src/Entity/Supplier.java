@@ -11,6 +11,14 @@ public class Supplier {
     public Supplier() {
     }
 
+    public Supplier(String sname, String address, String people, String phone, String mail) {
+        this.sname = sname;
+        this.address = address;
+        this.people = people;
+        this.phone = phone;
+        this.mail = mail;
+    }
+
     public Supplier(int sid, String sname, String address, String people, String phone, String mail) {
         this.sid = sid;
         this.sname = sname;
