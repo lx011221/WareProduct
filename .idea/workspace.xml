@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92625af3-4939-46a9-8dc8-23d4c65fdbbe" name="变更" comment="变更">
+      <change afterPath="$PROJECT_DIR$/src/Entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/Impl/SupplierDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/Impl/SupplierDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679020150592</updated>
-      <workItem from="1679291107579" duration="3432000" />
+      <workItem from="1679291107579" duration="4347000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1679283992185</created>
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679293857119</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="变更">
+      <created>1679294667799</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679294667799</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
