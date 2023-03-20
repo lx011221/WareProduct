@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92625af3-4939-46a9-8dc8-23d4c65fdbbe" name="变更" comment="变更">
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/Impl/SupplierDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/Impl/SupplierDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/SupplierDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/SupplierDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/SupplierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/SupplierService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/SupplierView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/SupplierView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,14 @@
       <recent name="D:\Program Files\IntelliJ IDEA 2022.1.4\project\WareProduct\lib" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="test3.17" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test" />
       <module name="test3.17" />
@@ -61,6 +68,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
@@ -74,7 +82,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679020150592</updated>
       <workItem from="1679291107579" duration="4592000" />
-      <workItem from="1679295766327" duration="983000" />
+      <workItem from="1679295766327" duration="1244000" />
+      <workItem from="1679297037057" duration="3845000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1679283992185</created>
@@ -153,7 +162,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679295738080</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="变更">
+      <created>1679296940727</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679296940727</updated>
+    </task>
+    <task id="LOCAL-00013" summary="变更">
+      <created>1679296991253</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679296991253</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -81,13 +81,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "pid=" + pid +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", low_price=" + low_price +
-                ", tid=" + tid +
-                ", sid=" + sid +
-                '}';
+        return "编号：" + pid + "\t名称：" + name + "\t成本：" + price + "\t最低售价：" + low_price + "\t供应商：" + sname + "\t类型：" + type;
     }
 }

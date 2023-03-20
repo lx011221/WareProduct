@@ -78,13 +78,6 @@ public class Supplier {
 
     @Override
     public String toString() {
-        return "Supplier{" +
-                "sid=" + sid +
-                ", sname='" + sname + '\'' +
-                ", address='" + address + '\'' +
-                ", people='" + people + '\'' +
-                ", phone='" + phone + '\'' +
-                ", mail='" + mail + '\'' +
-                '}';
+        return "编号：" + sid + "\t名称：" + sname + "\t地址：" + address + "\t联系人：" + people + "\t电话：" + phone + "\t邮箱：" + mail;
     }
 }
