@@ -7,6 +7,8 @@ public class Product {
     private double low_price;
     private int tid;
     private int sid;
+    private String sname;
+    private String type;
 
     public Product() {
     }
@@ -18,6 +20,15 @@ public class Product {
         this.low_price = low_price;
         this.tid = tid;
         this.sid = sid;
+    }
+
+    public Product(int pid, String name, double price, double low_price, String sname, String type) {
+        this.pid = pid;
+        this.name = name;
+        this.price = price;
+        this.low_price = low_price;
+        this.sname = sname;
+        this.type = type;
     }
 
     public int getPid() {

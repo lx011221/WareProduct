@@ -1,6 +1,7 @@
 package Dao.Impl;
 
 import Dao.SupplierDao;
+import Entity.Product;
 import Entity.Supplier;
 import Util.DBConnection;
 
@@ -18,6 +19,7 @@ public class SupplierDaoImpl implements SupplierDao {
     private static final String SQL_SELECTBYSID = "select * from supplier where sid = ?";
     private static final String SQL_SELECTBYSNAME = "select * from supplier where sname like ?";
     private static final String SQL_SELECTBYPEOPLE = "select * from supplier where people like ?";
+    private static final String SQL_SELECTPRODUCTBYSID = "select pid, name, price, low_price, sname, type from supplier, product, type where supplier.sid = product.sid and product.tid = type.tid and supplier.sid = ? order by pid;";
 
     @Override
     public int create(Supplier supplier) {
@@ -110,5 +112,30 @@ public class SupplierDaoImpl implements SupplierDao {
             DBConnection.close(resultSet, preparedStatement, connection);
         }
         return suppliers;
+    }
+
+    @Override
+    public ArrayList<Product> selectProductBySid(int sid) {
+        ArrayList<Product> products = new ArrayList<>();
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(SQL_SELECTPRODUCTBYSID);
+            preparedStatement.setInt(1, sid);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int pid = resultSet.getInt("pid");
+                String name = resultSet.getString("name");
+                int price = resultSet.getInt("price");
+                int low_price = resultSet.getInt("low_price");
+                String sname = resultSet.getString("sname");
+                String type = resultSet.getString("type");
+                products.add(new Product(pid, name, price, low_price, sname, type));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBConnection.close(resultSet, preparedStatement, connection);
+        }
+        return products;
     }
 }

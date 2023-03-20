@@ -1,5 +1,6 @@
 package Dao;
 
+import Entity.Product;
 import Entity.Supplier;
 
 import java.util.ArrayList;
@@ -12,4 +13,6 @@ public interface SupplierDao {
     ArrayList<Supplier> selectBySname(String value);
 
     ArrayList<Supplier> selectByPeople(String value);
+
+    ArrayList<Product> selectProductBySid(int sid);
 }

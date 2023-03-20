@@ -2,6 +2,7 @@ package Service;
 
 import Dao.Impl.SupplierDaoImpl;
 import Dao.SupplierDao;
+import Entity.Product;
 import Entity.Supplier;
 
 import java.util.ArrayList;
@@ -23,5 +24,9 @@ public class SupplierService {
 
     public ArrayList<Supplier> selectByPeople(String value) {
         return supplierDao.selectByPeople(value);
+    }
+
+    public ArrayList<Product> selectProductBySid(int sid) {
+        return supplierDao.selectProductBySid(sid);
     }
 }
