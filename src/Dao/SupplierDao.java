@@ -10,5 +10,4 @@ public interface SupplierDao {
     Supplier selectBySname(String value);
 
     Supplier selectByPeople(String value);
-
 }
